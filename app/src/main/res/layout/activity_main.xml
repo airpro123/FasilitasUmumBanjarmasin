@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:id="@+id/appBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:titleEnabled="false"
+                >
+
+                <TextView
+                    android:id="@+id/tajuk"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="FASILITAS UMUM"
+                    android:textSize="40dp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/ibSOS"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:scaleType="center"
+                    android:background="@drawable/bgbulat"
+                    android:src="@drawable/ic_panggil"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorHeight="4dp"
+                app:tabIndicatorColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                app:tabTextColor="@color/tabColor"
+                app:tabIndicator="@color/tabIndikator">
+            </android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabIndicatorColor="#00000000"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

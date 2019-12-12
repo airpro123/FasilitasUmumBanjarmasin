@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Projek Fasilitas Umum Andri</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="accesToken">pk.eyJ1IjoiYWlycHJvMTIzIiwiYSI6ImNqcTIzOXc2ajBkcWQzeG4yYjJ2NHJpcjAifQ.hZVfGqlMRFPi0OjX3Aig7Q</string>
+    <string name="secretToken">sk.eyJ1IjoiYWlycHJvMTIzIiwiYSI6ImNqdWNlczh1MjBqMm80Mmx0ZmVlMDZsNXIifQ.KGOOZTG3incserMV_O4sbQ</string>
+
+    <string name="open_location_settings">
+        Untuk menjalankan aplikasi ini anda perlu mengaktifkan fitur lokasi.
+    </string>
+    <string name="open_network_settings">
+        Untuk menjalankan aplikasi ini anda memerlukan koneksi internet.
+    </string>
+
+</resources>

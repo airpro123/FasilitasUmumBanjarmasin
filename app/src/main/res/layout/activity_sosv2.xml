@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SOSv2Activity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayoutSOS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarSOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:titleEnabled="false">
+
+                <TextView
+                    android:id="@+id/tajukSOS"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="SOS"
+                    android:textColor="#ffffff"
+                    android:textSize="24dp" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayoutSOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:tabIndicator="@color/tabIndikator"
+                app:tabIndicatorColor="#FFFFFF"
+                app:tabIndicatorHeight="4dp"
+                app:tabTextColor="@color/tabColor"></android.support.design.widget.TabLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpagerSOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:tabIndicatorColor="#00000000"></android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.constraint.ConstraintLayout>
